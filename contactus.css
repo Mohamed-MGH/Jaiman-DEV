@@ -1,0 +1,630 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", Helvetica, Arial, Sans-Serif;
+  box-sizing: border-box;
+}
+
+/* HEADER SECTION*/
+
+header {
+  /* width: 95vw; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0.8em auto;
+}
+/* /////////////// MEDIA QUERY FOR SMALL DEVICES /////////// */
+
+@media (max-width: 600px) {
+  header {
+    width: 100vw;
+    font-size: 0.8em;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* /////////////// MEDIA QUERY FOR MEDIUM DEVICES /////////// */
+@media (min-width: 601px) and (max-width: 800px) {
+  header {
+    width: 100vw;
+    font-size: 0.9em;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column;
+    align-items: center; */
+  }
+}
+
+/* //////////////////////////////////////////////////////////// */
+
+/* PROJECT LOGO */
+
+.logo img {
+  /* width: 6.5em; */
+  width: 60%;
+  height: auto;
+  margin-left: 3em;
+  /* margin-left: 3vw; */
+}
+
+/* NAV SECTION INCLUDE NAV-BAR AND NAV-LANG*/
+
+.nav-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-bar {
+  margin-right: 6vw;
+}
+
+/* NAV-BAR */
+
+.nav-bar a:link,
+.nav-bar a:visited {
+  font-size: 1.2em;
+  color: #000000;
+  display: inline-block;
+  margin: 1em 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover,
+.nav-bar a:active {
+  color: #61ad4f;
+  text-decoration: underline;
+}
+
+/* NAV-LANG */
+
+.nav-lang {
+  margin-right: 6vw;
+}
+
+.nav-lang a:link,
+.nav-lang a:visited {
+  font-size: 1.2em;
+  color: #000000;
+  margin: 1em 0.2em;
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.nav-lang a:hover,
+.nav-lang a:active {
+  color: #9cdde5;
+}
+
+nav span {
+  margin: 1em 0.2em;
+}
+
+/* /////////////MEDIA QUERY FOR SMALL DEVICES/////////////// */
+@media (max-width: 600px) {
+  .nav-all {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-bar {
+    margin-right: 0;
+  }
+
+  .nav-lang {
+    margin: 0;
+  }
+}
+/* /////////////// MEDIA QUERY FOR MEDIUM DEVICES /////////// */
+@media (min-width: 601px) and (max-width: 800px) {
+  .logo img {
+    width: 70%;
+    height: auto;
+    margin-left: 3em;
+  }
+
+  .nav-all {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+  }
+
+  .nav-bar {
+    margin-right: 0;
+  }
+
+  .nav-lang {
+    margin: 0;
+  }
+}
+/* /////////////// LARGE QUERY FOR MEDIUM DEVICES /////////// */
+@media (min-width: 801px) and (max-width: 1300px) {
+  .logo img {
+    width: 72%;
+    height: auto;
+    margin-left: 2.5em;
+  }
+
+  .nav-all {
+    font-size: 0.9em;
+  }
+}
+/* //////////////////////////////////////////////////////////// */
+
+/* MID SECTION INCLUDE IMG OF CONFERENCE */
+
+.conference {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 95%;
+  height: 17em;
+  margin: 1em auto;
+  text-align: center;
+  background-image: url("egp-bkg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+/* /////////////// MEDIA QUERY FOR SMALL MOBILE /////////// */
+
+@media (max-width: 600px) {
+  .conference {
+    width: 98%;
+    height: 10em;
+  }
+}
+/* /////////////// MEDIA QUERY FOR MEDIUM DEVICES /////////// */
+@media (min-width: 601px) and (max-width: 800px) {
+  .conference {
+    height: 13em;
+  }
+}
+/* //////////////////////////////////////////////////////////// */
+
+/* SANABEL OFFICE INFO */
+
+.office-info {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 1em 3em 5em 3em;
+}
+
+.office-info p {
+  font-weight: 400;
+  margin: 1.2em 0 0.3em 0;
+}
+
+.office-info h4 {
+  font-size: 1.05em;
+  font-weight: 500;
+  margin: 0.9em 0 0.3em 0;
+}
+
+.contact-msg {
+  width: 93%;
+  border-radius: 8px;
+  font-size: 1.2em;
+  padding: 0 1em;
+  margin-bottom: 1em;
+  background-color: rgba(199, 239, 241, 0.418);
+}
+
+.contact-msg p {
+  margin-bottom: 1em;
+}
+
+.sana-data {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.sana-address {
+  padding: 1.5em;
+  border: 1px dotted rgba(162, 168, 168, 0.842);
+  -webkit-transition: border 1s;
+  -o-transition: border 1s;
+  transition: border 1s;
+}
+
+.sana-mail {
+  padding: 1.5em;
+  border: 1px dotted rgba(162, 168, 168, 0.842);
+  -webkit-transition: border 1s;
+  -o-transition: border 1s;
+  transition: border 1s;
+}
+
+.sana-mail p::before {
+  content: "";
+  display: block;
+  background: url(favicon/logo-1.png) no-repeat;
+  width: 20px;
+  height: 18px;
+  float: left;
+  margin: 3px 6px 0 0;
+}
+
+.sana-mail span {
+  margin-left: 30px;
+}
+
+.sana-address:hover,
+.sana-mail:hover {
+  border: 1px dotted #309b1e;
+}
+
+.sana-mail a:link,
+.sana-mail a:visited {
+  text-decoration: none;
+  color: #309b1e;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.sana-mail a:hover,
+.sana-mail a:active {
+  color: black;
+  text-decoration: underline;
+}
+/* /////////////// MEDIA QUERY FOR SMALL MOBILE /////////// */
+
+@media (max-width: 600px) {
+  .office-info {
+    width: 95vw;
+    margin: 1em auto;
+  }
+  .contact-msg {
+    width: 95%;
+    font-size: 0.8em;
+  }
+  .sana-data {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.9em;
+  }
+  .sana-address,
+  .sana-mail {
+    padding: 1em;
+    margin-bottom: 0.5em;
+    width: 95%;
+  }
+}
+/* /////////////// MEDIA QUERY FOR MEDIUM DEVICES /////////// */
+@media (min-width: 601px) and (max-width: 800px) {
+  .office-info {
+    width: 95vw;
+    margin: 1em auto;
+  }
+  .contact-msg {
+    width: 95%;
+    font-size: 1em;
+  }
+  .sana-data {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.1em;
+  }
+  .sana-address,
+  .sana-mail {
+    padding: 1em;
+    margin-bottom: 0.5em;
+    width: 95%;
+  }
+  .sana-mail p::before {
+    width: 25px;
+    height: 21px;
+  }
+}
+/* /////////////// LARGE QUERY FOR MEDIUM DEVICES /////////// */
+@media (min-width: 801px) and (max-width: 1300px) {
+  .office-info {
+    width: 97vw;
+    margin: 2em auto;
+  }
+  .contact-msg {
+    font-size: 1em;
+  }
+  .sana-data {
+    font-size: 1em;
+  }
+}
+/* /////////////// LARGE2 QUERY FOR MEDIUM DEVICES /////////// */
+@media (min-width: 1301px) and (max-width: 1500px) {
+  .office-info {
+    width: 97vw;
+    margin: 2em auto;
+  }
+  .sana-data {
+    font-size: 1.05em;
+  }
+}
+/* //////////////////////////////////////////////////////////// */
+
+/* CONTACT-US ANS LINKS  */
+.info {
+  padding: 0.5em 1em;
+  color: grey;
+  background-color: rgb(53, 52, 52);
+}
+
+.info .contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.info h3 {
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+/* .info div {
+  margin: 0.5em 0;
+} */
+
+p {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.info .email a:link,
+.info .email a:visited {
+  text-decoration: none;
+  color: grey;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  -webkit-transition: color 2s;
+  -o-transition: color 2s;
+  transition: color 2s;
+}
+.info .email a:hover,
+.info .email a:active {
+  color: #48963a;
+  text-decoration: underline;
+}
+/* /////////////// MEDIA QUERY FOR SMALL MOBILE /////////// */
+
+@media (max-width: 600px) {
+  .info {
+    font-size: 0.8em;
+    padding: 0;
+  }
+  .info .contact-us {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.8em;
+  }
+  .info h3 {
+    font-size: 1.1em;
+    margin-bottom: 0;
+  }
+}
+/* /////////////// MEDIA QUERY FOR MEDIUM DEVICES /////////// */
+@media (min-width: 601px) and (max-width: 800px) {
+  .info {
+    font-size: 1em;
+    padding: 0.5em;
+  }
+  .info .contact-us {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.8em;
+  }
+  .info h3 {
+    font-size: 1.1em;
+    margin-bottom: 0;
+  }
+}
+/* //////////////LARGE QUERY FOR MEDIUM DEVICES//////////////// */
+@media (min-width: 801px) and (max-width: 900px) {
+  .info {
+    font-size: 0.8em;
+    padding: 0.5em;
+  }
+  .info h3 {
+    font-size: 1.1em;
+  }
+}
+/* //////////////LARGE QUERY FOR MEDIUM DEVICES//////////////// */
+@media (min-width: 901px) and (max-width: 1300px) {
+  .info {
+    font-size: 0.9em;
+    padding: 0.4em;
+  }
+}
+/* //////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////// */
+
+/* FOOTER */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #48963a;
+  /* margin: 0 -0.6em -1.5em -0.6em; */
+}
+
+.copyright {
+  margin: 1.2em 2.3em;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #ffffffcb;
+}
+
+.bank-logos {
+  width: 32%;
+  margin: 1.2em 2em 1.2em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.bank-logos img {
+  margin-right: 0.6em;
+  width: 15%;
+  height: auto;
+}
+
+.bank-logos .arab-bank {
+  width: 33%;
+  height: auto;
+}
+
+/* /////////////// MEDIA QUERY FOR SMALL MOBILE /////////// */
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright {
+    font-size: 1em;
+    margin: 1em 2em;
+  }
+  .bank-logos {
+    width: 60%;
+    justify-content: center;
+  }
+}
+/* /////////////// MEDIA QUERY FOR MEDIUM DEVICES /////////// */
+@media (min-width: 601px) and (max-width: 800px) {
+  .copyright {
+    font-size: 1em;
+    margin: 1em 2em;
+  }
+  .bank-logos {
+    width: 50%;
+  }
+}
+/* //////////////////////////////////////////////////////////// */
+
+/* PAGE SCROLLUP BUTTON */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #48963a;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#myBtn:hover {
+  background-color: #9cdde5;
+}
+
+/* /////////////// MEDIA QUERY FOR SMALL MOBILE /////////// */
+@media (max-width: 600px) {
+  #myBtn {
+    font-size: 12px;
+    padding: 5px;
+    bottom: 100px;
+    right: 10px;
+  }
+}
+/* /////////////// MEDIA QUERY FOR MEDIUM DEVICES /////////// */
+@media (min-width: 601px) and (max-width: 800px) {
+  #myBtn {
+    font-size: 16px;
+    padding: 10px;
+    bottom: 50px;
+    right: 10px;
+  }
+}
+/* //////////////LARGE QUERY FOR MEDIUM DEVICES//////////////// */
+@media (min-width: 801px) and (max-width: 1300px) {
+  #myBtn {
+    font-size: 16px;
+    padding: 10px;
+    bottom: 50px;
+    right: 10px;
+  }
+}
+/* //////////////////////////////////////////////////////////// */
